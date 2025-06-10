@@ -4,7 +4,7 @@ import React from "react";
 import FormRenderer from "@/components/FormRenderer";
 
 type Props = {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 };
 
 export const metadata = {

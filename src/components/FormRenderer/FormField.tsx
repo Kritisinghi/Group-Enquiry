@@ -109,7 +109,6 @@ const FormField = ({ field, register, error }: FormFieldProps) => {
               className="flex items-center">
               <input
                 id={`${field.name}-${option.value}`}
-                name={field.name}
                 type="radio"
                 value={option.value}
                 className="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"

@@ -1,3 +1,5 @@
+import * as yup from "yup";
+
 export const groupEnquiryFormSchema = yup.object().shape({
   contactTitle: yup.string().oneOf(["Mr", "Mrs"]),
   firstName: yup.string().required("First Name is required."),

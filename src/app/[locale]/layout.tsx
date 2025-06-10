@@ -4,9 +4,9 @@ import { locales, type Locale } from "@/lib/i18n";
 import { JsEnabledContextProvider } from "../context/JsEnabledContext";
 import "../globals.css";
 
-// export async function generateStaticParams() {
-//   return locales.map((locale) => ({ locale }));
-// }
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 type Props = {
   children: ReactNode;
@@ -14,8 +14,7 @@ type Props = {
 };
 
 export default async function RootLayout({ children, params }: Props) {
-  const d = await params;
-  const locale = d.locale;
+  const { locale } = await params;
 
   if (!locales.includes(locale)) {
     notFound();

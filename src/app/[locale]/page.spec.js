@@ -30,7 +30,7 @@ jest.mock("../../configs/form/groupBookingSchema", () => ({
 
 jest.mock("../../components/FormRenderer", () => ({
   __esModule: true,
-  default: jest.fn(({ config }) => (
+  default: jest.fn(() => (
     <div data-testid="mock-form-renderer">Mock Form Rendere</div>
   )),
 }));
