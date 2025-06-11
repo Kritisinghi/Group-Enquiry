@@ -10,6 +10,8 @@ export const getGroupBookingFormConfig = async (
   return {
     title: t["form.title"],
     description: t["form.description"],
+    nextStep: t["form.nextStep"],
+    submit: t["form.submit"],
     sections: [
       {
         id: "contact-details-form",

@@ -6,10 +6,12 @@ type Props = {
   showContinueButton?: boolean;
   onContinue?: () => void;
   isLastSection?: boolean;
+  nextStepLabel: string;
 };
 
 const Accordion = ({
   title,
+  nextStepLabel,
   children,
   isOpen,
   onClick,
@@ -37,7 +39,7 @@ const Accordion = ({
                 type="button"
                 onClick={onContinue}
                 className="px-6 py-2 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-200">
-                Continue
+                {nextStepLabel}
               </button>
             </div>
           )}

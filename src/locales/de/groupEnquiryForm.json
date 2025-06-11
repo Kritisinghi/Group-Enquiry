@@ -1,5 +1,7 @@
 {
   "form": {
+    "submit": "Absenden",
+    "nextStep": "Weiter",
     "title": "Gruppenbuchung anfragen",
     "description": "Planen Sie eine Gruppenveranstaltung und benötigen Sie 10 oder mehr Zimmer? Füllen Sie das untenstehende Formular aus! Sobald wir Ihre Anfrage erhalten haben, wird sich unser Gruppenbuchungsteam mit Ihnen in Verbindung setzen.",
     "sections": {
