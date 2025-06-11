@@ -4,7 +4,12 @@ import { NextRequest, NextResponse } from "next/server";
 import * as yup from "yup";
 import { groupEnquiryFormSchema } from "./validation.schema";
 
-const dataFilePath = path.join(process.cwd(), "data", "submissions.json");
+const dataFilePath = path.join(
+  process.cwd(),
+  "public",
+  "data",
+  "submissions.json",
+);
 
 export async function POST(request: NextRequest) {
   try {
