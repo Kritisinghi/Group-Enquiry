@@ -100,11 +100,12 @@ const FormRenderer = ({ config }: Props) => {
           <Accordion
             key={section.id}
             title={section.title}
+            nextStepLabel={config.nextStep}
             isOpen={openSection === section.id}
             onClick={() => toggleSection(section.id)}
             showContinueButton={true}
             onContinue={() => handleContinue(section.id)}
-            isLastSection={index === config.sections.length}>
+            isLastSection={index === config.sections.length - 1}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {section.fields.map((field) => (
                 <FormField
@@ -120,7 +121,7 @@ const FormRenderer = ({ config }: Props) => {
                 <button
                   type="submit"
                   className="px-8 py-3 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-300">
-                  Submit Group Booking Request
+                  {config.submit}
                 </button>
               </div>
             )}

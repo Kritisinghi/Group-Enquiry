@@ -38,5 +38,7 @@ export type FormSection = {
 export type FormConfig = {
   title: string;
   description: ReactNode;
+  nextStep: string;
+  submit: string;
   sections: FormSection[];
 };
