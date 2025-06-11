@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { NextRequest, NextResponse } from "next/server";
-import yup from "yup";
+import * as yup from "yup";
 import { groupEnquiryFormSchema } from "./validation.schema";
 
 const dataFilePath = path.join(process.cwd(), "data", "submissions.json");
