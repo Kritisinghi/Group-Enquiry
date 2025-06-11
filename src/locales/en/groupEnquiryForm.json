@@ -1,0 +1,114 @@
+{
+  "form": {
+    "title": "Request a group booking",
+    "description": "Planning a group event and need 10 or more rooms? Fill out the form below! Once we’ve received your request, our group booking team will be in touch.",
+    "sections": {
+      "contactDetails": {
+        "title": "Contact details",
+        "fields": {
+          "title": {
+            "title": "Your Contact Details",
+            "label": "Title",
+            "options": {
+              "mr": "Mr",
+              "mrs": "Mrs"
+            },
+            "requiredMessage": "Group Name is required."
+          },
+          "firstName": {
+            "label": "First Name",
+            "placeholder": "First Name"
+          },
+          "lastName": {
+            "label": "Last Name",
+            "placeholder": "Last Name"
+          },
+          "phoneNumber": {
+            "label": "Phone Number",
+            "placeholder": "e.g., +44 1234 567890"
+          },
+          "email": {
+            "label": "Email Address",
+            "placeholder": "you@example.com"
+          }
+        }
+      },
+      "bookingDetails": {
+        "title": "Booking Details",
+        "fields": {
+          "bookerType": {
+            "label": "What type of booker are you?",
+            "title": "What type of booker are you?",
+            "options": {
+              "personal": "personal",
+              "business": "business",
+              "travelManagementCompany": "Travel Management Company"
+            }
+          },
+          "companyName": {
+            "label": "Company Name",
+            "placeholder": "Company Name"
+          },
+          "holidayType": {
+            "label": "Holiday Type",
+            "options": {
+              "business": "Business",
+              "leisure": "Leisure"
+            }
+          },
+          "groupVisitReason": {
+            "title": "What is the reason for your group's visit?",
+            "label": "What is the reason for your group's visit?",
+            "placeholder": "Select a reason",
+            "options": {
+              "association": "Association",
+              "busTour": "Bus Tour"
+            }
+          },
+          "hotel": {
+            "title": "Booking Details <br/> Our team will try to accommodate your group’s preferences in terms of hotels and dates. If that’s not possible, we’ll do everything we can to offer the best alternatives.",
+            "label": "Hotel",
+            "placeholder": "Enter a hotel",
+            "options": {
+              "birmingham": "Birmingham",
+              "london": "London"
+            }
+          },
+          "checkInDate": {
+            "label": "Check-in Date"
+          },
+          "checkOutDate": {
+            "label": "Check-out Date"
+          },
+          "packageType": {
+            "title": "Package Type <br/> Subject to availability. Room only not available for group bookings.",
+            "label": "Package Type",
+            "placeholder": "Enter a hotel",
+            "options": {
+              "premierInnBreakfast": "Premier Inn Breakfast",
+              "mealDeal": "Meal Deal (dinner, drink and breakfast)"
+            }
+          }
+        }
+      },
+      "roomRequirements": {
+        "title": "Room Requirements",
+        "fields": {
+          "stayingWithChildren": {
+            "title": "Rooms <br/>Select the maximum number of rooms required by room type and occupancy.",
+            "label": "Travelling/staying with children (2-15 years)"
+          },
+          "accessibleRoom": {
+            "label": "Accessible room is needed."
+          },
+          "numOfRooms": {
+            "label": "Number of Rooms"
+          },
+          "additionalInfo": {
+            "label": "Additional Information"
+          }
+        }
+      }
+    }
+  }
+}
