@@ -104,7 +104,7 @@ const FormRenderer = ({ config }: Props) => {
             onClick={() => toggleSection(section.id)}
             showContinueButton={true}
             onContinue={() => handleContinue(section.id)}
-            isLastSection={index === config.sections.length - 1}>
+            isLastSection={index === config.sections.length}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {section.fields.map((field) => (
                 <FormField
